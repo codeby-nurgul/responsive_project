@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="logo-removebg-preview.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-eventdetail">
+    <nav class="navigation-bar">
+      <div class="logo">
+        <img src="images/logo-removebg-preview.png" alt="Logo" />
+      </div>
+      <div class="nav-container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li>
+            <button onclick="window.location.href='signup.html'">
+              Sign in
+            </button>
+          </li>
+          <li>
+            <button onclick="window.location.href='signup.html'">
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1 class="events-header">Event Details</h1>
+     <!-- Event details slider will be populated via JavaScript -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/people-planting-tree-countryside.jpg" />
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/foto1.jpg" />
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/foto2.jpg" />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+    <br />
+    <div class="dot-slider">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <div class="event-info">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+        perferendis doloremque nisi facere omnis voluptate magni, non temporibus
+        laboriosam porro ipsa architecto labore, ex nulla nemo quibusdam rem
+        laborum ipsam.
+      </p>
+      <span class="heart-icon">
+        <i class="fa-regular fa-heart"></i>
+      </span>
+      <button class="add-list-btn">Add Your Event List</button>
+    </div>
+
+    <div class="event-video">
+      <video height="360" controls>
+        <source
+          src="https://youtu.be/c-TyVpiLKXo?si=MveHYGa6xoIVyLYR"
+          type="video/mp4"
+        />
+      
+      </video>
+    </div>
+
+    <div class="subscribe-event">
+      <h2>Subscribe the Event</h2>
+
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="Surname" /><br />
+      <input type="email" placeholder="Email" />
+      <input type="number" placeholder="Phone Number" /> <br />
+      <button class="btn-subscribe">Subscribe</button>
+    </div>
+    <!-- footer section -->
+    <footer>
+      <div class="social-media">
+        <ul class="social-media-info">
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="quick-links">
+        <ul>
+          <h3>Quick Links</h3>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="profile.html">My Profile</a></li>
+        </ul>
+      </div>
+
+      <div class="help-support">
+        <h3>Help & Support</h3>
+        <ul>
+          <li><a href="support.html">FAQ</a></li>
+          <li><a href="support.html">Contact Us</a></li>
+          <li><a href="profile.html">Settings</a></li>
+        </ul>
+      </div>
+
+      <div class="user-details">
+        <h3>User Details</h3>
+        <ul>
+          <li><a href="profile.html">Achievements</a></li>
+          <li><a href="profile.html">My Events</a></li>
+          <li><a href="profile.html">Notifications</a></li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        &copy; 2025 GreenConnect. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>
