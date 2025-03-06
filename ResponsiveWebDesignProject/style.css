@@ -1,3 +1,4 @@
+/* We declared color variables in root. We use to make color changes easier */
 :root {
   --primary-color: #3a4d39;
   --secondary-color: #4f6f52;
