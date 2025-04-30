@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Profile</title>
+    <link rel="icon" type="image/png" href="assets/images/logo/logo-removebg-preview.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+  </head>
+  <body class="bg-profile">
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar">
+      <div class="logo">
+        <img src="assets/images/logo/logo-removebg-preview.png" alt="Logo" />
+      </div>
+      <div class="nav-container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li>
+            <button onclick="window.location.href='signup.html'">
+              Sign in
+            </button>
+          </li>
+          <li>
+            <button onclick="window.location.href='signup.html'">
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="profile-header">My Profile</h1>
+    <div class="profile-buttons">
+      <button class="tab-btn" data-target="0">Profile</button>
+      <button class="tab-btn" data-target="2">Settings</button>
+      <button class="tab-btn" data-target="3">Favorite Events</button>
+      <button class="tab-btn" data-target="4">Badges&Progress</button>
+    </div>
+    <div class="profile-detail" id="profile" data-id="0">
+      <img class="profile-image" src="assets/images/other-images/foto1.jpg" alt="Profile Image" />
+      <div class="event-description">
+        <h3>Welcome, Nurgül!</h3>
+        <p><strong>Email:</strong> nurgul@example.com</p>
+        <p><strong>Member Since:</strong> March 2024</p>
+        <p><strong>Location:</strong> Ankara, Turkey</p>
+        <p><strong>Interests:</strong> Sustainability, Clean Energy, Wildlife</p>
+        <p><strong>Bio:</strong> Passionate about making the world greener 🌱</p>
+      </div>
+    </div>
+    <div class="profile-detail" id="settings" data-id="2">
+      <div class="event-description">
+        <h3>Settings</h3>
+        <form class="settings-form">
+          <label for="email-notify">
+            <input type="checkbox" id="email-notify" checked />
+            Receive email notifications for upcoming events
+          </label><br /><br />
+          <label for="language-select">Preferred Language:</label>
+          <select id="language-select">
+            <option value="en">English</option>
+            <option value="tr">Turkish</option>
+          </select><br /><br />
+          <button type="submit" class="btn-settings-save">Save Changes</button>
+        </form>
+      </div>
+    </div>
+    <div class="profile-detail" id="favorite-events" data-id="3">
+    </div>
+    <div class="profile-detail" id="badges-progress" data-id="4">
+    </div>
+    <h1 class="task-header">My Tasks</h1>
+    <!-- Tasks will be dynamically added using AJAX at the Sprint4 -->
+    <div class="my-tasks">
+      <!-- Task cards will be populated via AJAX at the Sprint4 -->
+    </div>
+
+    <h2 class="daily-tasks-heading">My Daily Tasks</h2>
+    
+    <div class="my-daily-tasks">
+      <label><input type="checkbox" class="task-item"> Plant a tree 🌳</label><br>
+      <label><input type="checkbox" class="task-item"> Recycle waste ♻️</label><br>
+      <label><input type="checkbox" class="task-item"> Clean a local park 🧹</label><br>
+      <label><input type="checkbox" class="task-item"> Attend an eco workshop 📚</label><br>
+      <label><input type="checkbox" class="task-item"> Share a green tip online 🌍</label><br>
+    </div>
+    <div class="popup-container-daily-task"></div>
+    <!-- Progress bar for daily task completion -->
+    <div id="task-progress" style="width: 100%; margin-top: 20px;"></div>
+    
+    <div id="task-popup" class="popup-container">
+      <div class="popup-content">
+        <p id="popup-message"></p>
+      </div>
+    </div>
+    <!-- footer section -->
+    <footer>
+      <div class="social-media">
+        <ul class="social-media-info">
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="quick-links">
+        <ul>
+          <h3>Quick Links</h3>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="profile.html">My Profile</a></li>
+        </ul>
+      </div>
+
+      <div class="help-support">
+        <h3>Help & Support</h3>
+        <ul>
+          <li><a href="support.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="profile.html">Settings</a></li>
+        </ul>
+      </div>
+
+      <div class="user-details">
+        <h3>User Details</h3>
+        <ul>
+          <li><a href="profile.html">Achievements</a></li>
+          <li><a href="profile.html">My Events</a></li>
+          <li><a href="profile.html">Notifications</a></li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        &copy; 2025 GreenConnect. All Rights Reserved.
+      </div>
+    </footer>
+
+   
+    
+    <!-- jQuery (local) -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- jQuery UI (local) -->
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <script src="assets/js/jquery-ui/ui-init.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

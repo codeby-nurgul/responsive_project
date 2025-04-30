@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Details</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo/logo-removebg-preview.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+      <link rel="stylesheet" href="assets/css/jquery-ui.css">
+      <!-- Add the slick-theme.css if you want default styling -->
+      <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body class="bg-eventdetail">
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar">
+      <div class="logo">
+        <img src="assets/images/logo/logo-removebg-preview.png" alt="Logo" />
+      </div>
+      <div class="nav-container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li>
+            <button onclick="window.location.href='signup.html'">
+              Sign in
+            </button>
+          </li>
+          <li>
+            <button onclick="window.location.href='signup.html'">
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+     <!-- We added event informations dynamically using hardcoded JavaScript object arrays.
+       We will fetch data from a local JSON file via AJAX and dynamically create cards based on that JSON data
+    -->
+    <div class="event-detail-img-container">
+    </div>
+    <!-- Subscribe to Event Section -->
+    <div class="subscribe-event">
+      <h2>Subscribe the Event</h2>
+
+      <input type="text" id="name-input" placeholder="Name" />
+      <input type="text" placeholder="Surname" /><br />
+      <input type="email" placeholder="Email" />
+      <input type="number" placeholder="Phone Number" /> <br />
+      <button class="btn-subscribe">Subscribe</button>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      <div class="social-media">
+        <ul class="social-media-info">
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="quick-links">
+        <ul>
+          <h3>Quick Links</h3>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="profile.html">My Profile</a></li>
+        </ul>
+      </div>
+
+      <!-- Help & Support Section -->
+      <div class="help-support">
+        <h3>Help & Support</h3>
+        <ul>
+          <li><a href="support.html">FAQ</a></li>
+          <li><a href="support.html">Contact Us</a></li>
+          <li><a href="profile.html">Settings</a></li>
+        </ul>
+      </div>
+
+      <!-- User Details Section -->
+      <div class="user-details">
+        <h3>User Details</h3>
+        <ul>
+          <li><a href="profile.html">Achievements</a></li>
+          <li><a href="profile.html">My Events</a></li>
+          <li><a href="profile.html">Notifications</a></li>
+        </ul>
+      </div>
+
+      <!-- Copyright Notice -->
+      <div class="copyright">
+        &copy; 2025 GreenConnect. All Rights Reserved.
+      </div>
+    </footer>
+     <!-- jQuery (local) -->
+     <script src="assets/js/jquery.js"></script>
+
+     <!-- jQuery UI (local) -->
+     <script src="assets/js/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/plugins/carousel.js"></script>
+
+    <script src="assets/js/jquery-ui/ui-init.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

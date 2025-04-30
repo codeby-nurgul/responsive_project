@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Verde</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/logo/logo-removebg-preview.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body class="bg-home">
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar">
+      <div class="logo">
+        <img src="assets/images/logo/logo-removebg-preview.png" alt="Logo" />
+      </div>
+      <div class="nav-container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li>
+            <button onclick="window.location.href='signup.html'">
+              Sign in
+            </button>
+          </li>
+          <li>
+            <button onclick="window.location.href='signup.html'">
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="typed-overlay">
+      <h2><span id="typed"></span></h2>
+    </div>
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="assets/images/other-images/garbage.jpg" />
+        <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          src="assets/images/other-images/people-planting-tree-countryside.jpg"
+        />
+        <div class="text"></div>
+      </div>
+    </div>
+    <br />
+    <!-- about section -->
+    <div class="about">
+      <h2>About Aura Verde</h2>
+      <p>
+        At Aura Verde, we believe that small actions, when combined, can create
+        monumental change. Our mission is to inspire and empower individuals,
+        communities, and organizations to take real steps toward a more
+        sustainable future. The world is facing urgent environmental challenges,
+        and while many people want to make a difference, they often don't know
+        where to start. That’s where we come in. <br /><br />
+        Aura Verde is more than just a platform—it’s a movement designed to
+        bring people together around a shared vision: a cleaner, greener, and
+        more sustainable planet. We provide an interactive space where
+        individuals can discover and participate in impactful environmental
+        initiatives such as: <br />
+        <br />
+        🌿 Tree planting campaigns to restore natural ecosystems <br />🚮
+        Community clean-ups to reduce waste and pollution <br />
+        ♻️ Sustainability challenges to promote eco-friendly habits <br />💡
+        Educational workshops to spread awareness and inspire action
+        <br />Through our platform, users can explore, register for, and
+        actively contribute to these initiatives, making a real difference in
+        their local communities and beyond. Whether you're passionate about
+        reducing plastic waste, reforesting urban areas, or simply taking small
+        daily actions to minimize your carbon footprint, Aura Verde connects you
+        to the opportunities that matter most. <br /><br />
+        Why Join Aura Verde? <br />
+        ✅ A Community with a Purpose – Connect with like-minded individuals who
+        share your passion for environmental conservation. Together, we can
+        amplify our impact. <br />
+        ✅ Recognition for Your Efforts – Earn digital badges and rewards for
+        your contributions, keeping you motivated to stay engaged. <br />
+        ✅ Easy & Accessible Volunteering – Browse and sign up for local or
+        online events effortlessly, making sustainability a part of your
+        everyday life. <br />
+        ✅ A Step Towards Real Change – Every action, no matter how small,
+        contributes to a larger movement that can reshape the future of our
+        planet. <br />
+        <br />
+        The time for action is now. Aura Verde is here to guide and support your
+        journey toward sustainability, making it easier, more engaging, and
+        truly impactful. Join us today and be part of the change! 🌎💚
+      </p>
+    </div>
+    <h2 class="upcoming-event-title">Upcoming Events</h2>
+    <!-- Event cards and photos will be populated via AJAX -->
+    <div class="event-container"></div>
+    <!-- footer section -->
+    <footer>
+      <div class="social-media">
+        <ul class="social-media-info">
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="quick-links">
+        <ul>
+          <h3>Quick Links</h3>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="profile.html">My Profile</a></li>
+        </ul>
+      </div>
+
+      <div class="help-support">
+        <h3>Help & Support</h3>
+        <ul>
+          <li><a href="support.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="profile.html">Settings</a></li>
+        </ul>
+      </div>
+
+      <div class="user-details">
+        <h3>User Details</h3>
+        <ul>
+          <li><a href="profile.html">Achievements</a></li>
+          <li><a href="profile.html">My Events</a></li>
+          <li><a href="profile.html">Notifications</a></li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        &copy; 2025 GreenConnect. All Rights Reserved.
+      </div>
+    </footer>
+    <!-- jQuery (local) -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- jQuery UI (local) -->
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="assets/js/plugins/typed-init.js"></script>
+    <script src="assets/js/plugins/carousel.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
