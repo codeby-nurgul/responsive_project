@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Aura Verde</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-contact">
+    <!--
+  This is the Contact Us page for the Aura Verde website.
+  It includes a navigation bar, a contact form with fields for name, email, date, and message,
+  and a styled footer with social media and quick navigation links.
+  The page integrates jQuery UI for the datepicker and uses jQuery Validate for form validation.
+-->
+    <!-- navigation bar -->
+    <nav class="navigation-bar">
+      <div class="logo">
+        <img src="assets/images/logo/logo-removebg-preview.png" alt="Logo" />
+      </div>
+      <div class="nav-container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li>
+            <button onclick="window.location.href='signup.html'">
+              Sign in
+            </button>
+          </li>
+          <li>
+            <button onclick="window.location.href='signup.html'">
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="contact-fullname">Full Name</label>
+        <input type="text" id="contact-fullname" name="contactFullname" />
+        <label for="contact-email">Email</label>
+        <input type="email" id="contact-email" name="contactEmail" />
+        <label for="contact-date">Preferred Date</label>
+        <input type="text" id="contact-datepicker" name="contactDate" />
+        <label for="contact-message">Your Message</label>
+        <textarea
+          id="contact-message"
+          name="contactMessage"
+          rows="5"
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="contact-footer">
+      <div class="social-media">
+        <ul class="social-media-info">
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="quick-links">
+        <ul>
+          <h3>Quick Links</h3>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="profile.html">My Profile</a></li>
+        </ul>
+      </div>
+
+      <!-- Help & Support Section -->
+      <div class="help-support">
+        <h3>Help & Support</h3>
+        <ul>
+          <li><a href="support.html">FAQ</a></li>
+          <li><a href="support.html">Contact Us</a></li>
+          <li><a href="profile.html">Settings</a></li>
+        </ul>
+      </div>
+
+      <!-- User Details Section -->
+      <div class="user-details">
+        <h3>User Details</h3>
+        <ul>
+          <li><a href="profile.html">Achievements</a></li>
+          <li><a href="profile.html">My Events</a></li>
+          <li><a href="profile.html">Notifications</a></li>
+        </ul>
+      </div>
+
+      <!-- Copyright Notice -->
+      <div class="copyright">
+        &copy; 2025 GreenConnect. All Rights Reserved.
+      </div>
+    </footer>
+    <!-- jQuery (local) -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- jQuery UI (local) -->
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <script src="assets/js/jquery-ui/ui-init.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

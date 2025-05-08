@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/logo/logo-removebg-preview.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/signup.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <!-- Signup page is a login and registration page for "Aura Verde" featuring two separate forms: one for signing in and one for signing up. The layout includes a logo section, styled input fields, and submit buttons. It uses external stylesheets for visual design, Google Fonts for typography, and Font Awesome icons for navigation. Client-side validation is handled using jQuery and the jQuery Validate plugin to ensure proper user input before form submission. -->
+
+  <body class="bg-signup">
+    <button class="back" onclick="window.location.href='index.html'">
+      <i class="fa-solid fa-circle-arrow-left"></i>
+    </button>
+    <div class="signup">
+      <div class="logom">
+        <img src="assets/images/logo/logo-removebg-preview.png" alt="Logo" />
+        <h1 class="logo-header-signup">AURA VERDE</h1>
+      </div>
+
+      <!-- Sign In Form -->
+      <form id="signin-form" action="#">
+        <div class="signin-part">
+          <span>Email</span><br />
+          <input type="email" name="signinEmail" required /><br />
+          <span class="signup-span">Password</span><br />
+          <input type="password" name="signinPassword" required /><br />
+          <button type="submit">Sign in</button>
+        </div>
+      </form>
+      <div class="line"></div>
+      <!-- Sign Up Form -->
+      <form id="signup-form" action="#">
+        <div class="signup-part">
+          <span>Name</span><br />
+          <input type="text" name="name" required /><br />
+          <span>Surname</span><br />
+          <input type="text" name="surname" required /><br />
+          <span>Email</span><br />
+          <input type="email" name="email" required /><br />
+          <span>Password</span><br />
+          <input type="password" name="password" required /><br />
+          <button type="submit">Sign up</button>
+        </div>
+      </form>
+    </div>
+    <!-- jQuery and Validate Plugin -->
+    <!-- jQuery (local) -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- jQuery UI (local) -->
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="assets/js/plugins/form-validate.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

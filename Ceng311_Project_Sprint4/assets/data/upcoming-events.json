@@ -1,0 +1,27 @@
+[
+    {
+      "title": "Beach Cleanup Day",
+      "date": "2025-04-28",
+      "time": "10:00 - 13:00",
+      "location": "Büyükçekmece Beach, Istanbul",
+      "description": "Join Green Future Association in collecting plastic waste along the coastline. Free eco-bags for all participants!",
+      "src": "assets/images/event-images/beachday1.jpg"
+    },
+    {
+      "title": "Tree Planting Event – A Tree for Hope",
+      "date": "2025-05-04",
+      "time": "09:00 - 12:00",
+      "location": "Akyurt Forest Area, Ankara",
+      "description": "Plant 500 saplings with GreenHope Foundation. Earn extra points for every friend you bring!",
+      "src": "assets/images/event-images/treeday1.jpg"
+    },
+    {
+      "title": "Zero Waste Living Workshop",
+      "date": "2025-05-12",
+      "time": "15:00 - 17:00",
+      "location": "The Earth Café, Alsancak, Izmir",
+      "description": "Learn practical tips for a zero-waste lifestyle including natural product making and recycling methods.",
+      "src": "assets/images/event-images/wasteworkshop1.jpg"
+    }
+  ]
+  

@@ -1,0 +1,101 @@
+/* Background color for the event detail page */
+.bg-eventdetail {
+  background-color: #fffaec;
+}
+
+/* Image styling for the event banner */
+.event-detail-img {
+  width: 800px;
+  display: block;
+  margin: auto;
+}
+
+/* Container for the event image */
+.event-detail-img-container {
+  margin-top: 40px;
+}
+
+/* Main container for event information */
+.event-details-info {
+  background-color: var(--tertiary-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 14px;
+}
+
+/* Event title inside the details box */
+.event-details-info h2 {
+  color: var(--fifth-color);
+  font-size: 33px !important;
+}
+
+/* Highlighted text in the event details */
+.event-details-info strong {
+  color: var(--fourth-color);
+  font-weight: bold;
+}
+
+/* Paragraphs inside the event detail box */
+.event-details-info p {
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+/* Container for subscription section */
+.subscribe-event {
+  text-align: center;
+  background-color: var(--tertiary-color);
+  width: 80vw;
+  margin: auto;
+  padding: 20px;
+  margin-top: 100px;
+  color: var(--fifth-color);
+  font-size: 22px;
+  border-radius: 15px;
+}
+
+/* Input field for subscription */
+.subscribe-event input {
+  padding: 10px;
+  border: 2px solid var(--secondary-color);
+  margin-left: 40px;
+  margin-top: 16px;
+  width: 27%;
+  border: none !important;
+  box-shadow: 0.2px 0.2px 1.5px 1.5px var(--primary-color);
+  border-radius: 5px;
+}
+
+/* Subscription button styling */
+.btn-subscribe {
+  background-color: var(--fourth-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 170px;
+  margin-top: 23px;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/* Hover effect for subscribe button */
+.btn-subscribe:hover {
+  box-shadow: 1px 1px 2px 2px var(--primary-color);
+}
+
+/* Header title above event image */
+.event-detail-img-container .events-header {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 44px;
+}

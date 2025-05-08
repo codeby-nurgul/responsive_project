@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Verde</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/logo/logo-removebg-preview.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+
+  <!-- This is the homepage of Aura Verde, designed to introduce users to our mission and upcoming events. 
+  It features a dynamic slideshow, a typed text animation for engagement, and a detailed About section 
+  that outlines our goals. Styling is managed via external CSS and enhanced with animations using 
+  Typed.js and Slick Carousel. Footer and navigation provide quick access to other parts of the platform.  -->
+
+  <body class="bg-home">
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar">
+      <div class="logo">
+        <img src="assets/images/logo/logo-removebg-preview.png" alt="Logo" />
+      </div>
+      <div class="nav-container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li>
+            <button onclick="window.location.href='signup.html'">
+              Sign in
+            </button>
+          </li>
+          <li>
+            <button onclick="window.location.href='signup.html'">
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="typed-overlay">
+      <h2><span id="typed"></span></h2>
+    </div>
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="assets/images/other-images/garbage.jpg" />
+        <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          src="assets/images/other-images/people-planting-tree-countryside.jpg"
+        />
+        <div class="text"></div>
+      </div>
+    </div>
+    <br />
+    <!-- about section -->
+    <div class="about">
+      <h2>Aura Verde</h2>
+      <p class="about-content">
+        At <strong>Aura Verde</strong>, we believe that small actions, when
+        combined, can create monumental change. Our mission is to inspire and
+        empower individuals, communities, and organizations to take real steps
+        toward a more sustainable future. <br /><br />
+        🌿 <strong>Tree planting campaigns</strong> to restore natural
+        ecosystems <br />
+        🚮 <strong>Community clean-ups</strong> to reduce waste and pollution
+        <br />
+        ♻️ <strong>Sustainability challenges</strong> to promote eco-friendly
+        habits <br />
+        💡 <strong>Educational workshops</strong> to spread awareness and
+        inspire action <br /><br />
+        <em>Why Join Aura Verde?</em><br />
+        ✅ <strong>A Community with a Purpose</strong> – Connect with
+        like-minded individuals who share your passion for environmental
+        conservation. <br />
+        ✅ <strong>Recognition for Your Efforts</strong> – Earn digital badges
+        and rewards for your contributions. <br />
+        ✅ <strong>Easy & Accessible Volunteering</strong> – Join local or
+        online events effortlessly. <br />
+        ✅ <strong>A Step Towards Real Change</strong> – Your action matters.
+        Let's reshape the future together. <br /><br />
+        <strong>The time for action is now.</strong> Join us today and be part
+        of the change! 🌎💚
+      </p>
+    </div>
+
+    <h2 class="upcoming-event-title">Upcoming Events</h2>
+    <!-- Event cards and photos will be populated via AJAX -->
+    <div class="event-container"></div>
+    <!-- footer section -->
+
+    <footer>
+      <div class="social-media">
+        <ul class="social-media-info">
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="quick-links">
+        <ul>
+          <h3>Quick Links</h3>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="profile.html">My Profile</a></li>
+        </ul>
+      </div>
+
+      <div class="help-support">
+        <h3>Help & Support</h3>
+        <ul>
+          <li><a href="support.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="profile.html">Settings</a></li>
+        </ul>
+      </div>
+
+      <div class="user-details">
+        <h3>User Details</h3>
+        <ul>
+          <li><a href="profile.html">Achievements</a></li>
+          <li><a href="profile.html">My Events</a></li>
+          <li><a href="profile.html">Notifications</a></li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        &copy; 2025 GreenConnect. All Rights Reserved.
+      </div>
+    </footer>
+    <!-- jQuery (local) -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- jQuery UI (local) -->
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="assets/js/plugins/typed-init.js"></script>
+    <script src="assets/js/plugins/carousel.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/external-api.js"></script>
+  </body>
+</html>

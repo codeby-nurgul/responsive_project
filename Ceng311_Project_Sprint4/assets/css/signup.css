@@ -1,0 +1,124 @@
+/* Background styling for the signup page */
+.bg-signup {
+  background-image: url("../images/backgrounds/bgsignup.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+/* Flex container for the signup layout */
+.signup {
+  display: flex;
+}
+
+/* Common width for logo and form sections */
+.logom,
+.signup-part,
+.signin-part {
+  width: 400px;
+}
+
+/* Logo image styling */
+.logom img {
+  margin-top: 50px;
+  width: 400px;
+  height: 300px;
+  margin-left: 30px;
+}
+
+/* Header text next to the logo */
+.logo-header-signup {
+  margin-left: 170px;
+  margin-top: 70px;
+  font-size: 50px;
+  font-family: "Blaka Hollow", system-ui;
+  font-weight: 400;
+  color: green;
+}
+
+/* Logo image alignment inside .signup */
+.signup img {
+  text-align: center;
+  display: inline;
+}
+
+/* Layout for the signup form section */
+.signup-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  text-align: center;
+}
+
+/* Layout for the signin form section */
+.signin-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+/* Labels for form fields in both forms */
+.signin-part span,
+.signup-part span {
+  margin-bottom: 2px;
+  align-self: flex-start;
+  font-weight: bold;
+  font-size: large;
+  margin-left: 60px;
+  color: var(--primary-color);
+}
+
+/* Input fields for both signin and signup */
+.signin-part input,
+.signup-part input {
+  padding: 2px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 33px;
+  width: 280px;
+}
+
+/* Submit buttons for signin and signup */
+.signin-part button,
+.signup-part button {
+  margin-top: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 140px;
+  height: 50px;
+  background-color: var(--tertiary-color);
+  font-weight: bold;
+}
+
+/* Divider line between forms */
+.line {
+  border-right: var(--primary-color) solid 5px;
+  width: 10px;
+  height: 640px;
+}
+
+/* Font size adjustment for back arrow icon */
+.fa-circle-arrow-left {
+  font-size: 70px !important;
+}
+
+/* Back button styling and interaction */
+.back {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  transition: all 0.8s;
+}
+
+/* Hover effect for the back button */
+.back:hover {
+  transform: scale(1.2);
+}

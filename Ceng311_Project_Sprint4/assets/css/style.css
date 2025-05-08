@@ -1,0 +1,439 @@
+/* This CSS file defines the overall styling for the homepage and shared layout elements, 
+including navigation bar, hero slideshow, event section, about section, and footer. 
+It also includes styles for typography, transitions, and interactive elements. */
+
+:root {
+  --primary-color: #3a4d39;
+  --secondary-color: #4f6f52;
+  --tertiary-color: #bfcba8;
+  --fourth-color: #af8f6f;
+  --fifth-color: #443627;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navigation-bar {
+  background-color: var(--primary-color);
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+.nav-container {
+  flex-grow: 1;
+}
+.nav-container li button {
+  padding: 20px;
+  width: 120px;
+  transition: all 0.7s;
+}
+.nav-container li button:hover {
+  background-color: var(--tertiary-color);
+  border-radius: 15px;
+}
+.navigation-bar ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-around;
+}
+.navigation-bar a {
+  text-decoration: none;
+  color: var(--fourth-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navigation-bar button {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 8px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navigation-bar button:hover {
+  background-color: var(--fourth-color);
+}
+
+.slideshow-container {
+  margin-top: 10px;
+  max-width: 1400px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+.mySlides {
+  display: none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 35px;
+  border-radius: 50% !important;
+  color: black;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: #fff;
+}
+.user-review {
+  width: 600px;
+  font-size: large;
+}
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 35px;
+  border-radius: 50%;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: #fff;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.about {
+  margin: 80px auto;
+  padding: 40px;
+  max-width: 1200px;
+  background-color: var(--tertiary-color);
+  border-radius: 15px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+.about h2 {
+  color: var(--primary-color);
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  border: 2px dotted var(--primary-color);
+  padding: 12px;
+  border-radius: 15px;
+}
+
+.about-content {
+  color: var(--fifth-color);
+  font-size: 17px;
+  text-align: justify;
+  border: 1px solid var(--secondary-color);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.about-content strong {
+  color: var(--primary-color);
+}
+
+.about-content em {
+  color: var(--fourth-color);
+  font-style: normal;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.event-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.upcoming-event-title {
+  text-align: center;
+  color: var(--fourth-color);
+  font-size: 28px;
+}
+.event-card {
+  width: 400px;
+  height: auto;
+  background-color: var(--tertiary-color);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: large;
+}
+.event-card h3 {
+  color: var(--primary-color);
+  font-size: 26px !important;
+}
+.help-support h3 {
+  font-size: 24px;
+}
+.help-support {
+  width: 20%;
+}
+.event-info {
+  text-align: center;
+  border: var(--primary-color) 5px solid;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  height: 400px;
+  margin-top: 100px;
+}
+.add-list-btn {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--fourth-color);
+  color: var(--primary-color);
+  border: none;
+  transition: all 0.6s;
+  cursor: pointer;
+  font-weight: bold;
+}
+.add-list-btn:hover {
+  box-shadow: 1px 1px 2px 2px var(--primary-color);
+}
+.add-list-btn:active {
+  box-shadow: none;
+}
+
+footer {
+  display: flex;
+  margin-top: 8rem;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: var(--fourth-color);
+  font-size: 19px;
+  margin-top: 20px;
+}
+.social-media {
+  width: 30%;
+}
+.quick-links h3 {
+  font-size: 24px;
+}
+
+.user-details h3 {
+  font-size: 24px;
+}
+.quick-links {
+  width: 20%;
+}
+
+.user-detail {
+  width: 30%;
+}
+.copyright {
+  position: relative;
+  margin-top: 100px;
+}
+.social-media-info {
+  position: relative;
+  display: flex;
+  margin-top: 40px;
+}
+.social-media-info li {
+  position: relative;
+  list-style: none;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.social-media-info li a {
+  text-decoration: none;
+}
+.social-media-info li a .fa-brands {
+  font-size: 3em;
+  color: #222;
+}
+.social-media-info li a::before {
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.social-media-info li:nth-child(1) a::before {
+  content: "\f16d";
+  background-image: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 4px solid #dc2743;
+}
+.social-media-info li:nth-child(2) a::before {
+  content: "\f232";
+  color: #25d366;
+  border-bottom: 4px solid #25d366;
+}
+.social-media-info li:nth-child(3) a::before {
+  content: "\f099";
+  color: #1da1f2;
+  border-bottom: 4px solid #1da1f2;
+}
+.social-media-info li:hover a::before {
+  height: 100%;
+}
+
+.bg-home {
+  background-color: #fffaec;
+}
+.slick-arrow {
+  font-size: 50px !important;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  color: #2e7d32;
+}
+.slick-prev,
+.slick-next {
+  width: 60px !important;
+  height: 60px !important;
+  z-index: 999 !important;
+  top: 45% !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 80px !important;
+  color: #2e7d32 !important;
+  opacity: 1 !important;
+}
+.slick-dots li button:before {
+  font-size: 16px !important;
+  color: #2e7d32 !important;
+  opacity: 0.75 !important;
+}
+.slick-dots li.slick-active button:before {
+  color: #1b5e20 !important;
+  opacity: 1 !important;
+}
+.typed-overlay {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  color: var(--fifth-color);
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+#typed {
+  background-color: gainsboro;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.upcoming-events-img {
+  width: 300px;
+  border-radius: 30px;
+}
+
+.upcoming-events-desription {
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 500;
+  border: 0.1px solid var(--secondary-color);
+  padding: 10px;
+  border-radius: 12px;
+}
+.upcoming-events-location {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+.upcoming-events-date,
+.upcoming-events-time {
+  color: var(--fifth-color);
+  font-weight: bold;
+}

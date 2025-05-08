@@ -1,0 +1,170 @@
+/* Slides in the support section slider, vertically centered content */
+.mySlides-support {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Wrapper for the support slideshow with border and padding */
+.slideshow-container-support {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  margin-top: 70px;
+  width: 1000px;
+  border: 2px solid var(--fourth-color);
+  border-radius: 10px;
+  padding: 10px;
+  height: 300px;
+}
+
+/* Text inside the slide, placed at the bottom center */
+.text-slide-support {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Section title for the support organizations */
+.support-header {
+  text-align: center;
+  font-size: 20px;
+  color: var(--fourth-color);
+}
+
+/* Layout container for support cards, responsive and centered */
+.support-part {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  text-align: center;
+}
+
+/* Button used inside each support card */
+.support-card button {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 120px;
+  cursor: pointer;
+}
+
+/* Outer container for each support card */
+.support-card {
+  width: 400px;
+  height: 300px;
+  border: 3px solid var(--primary-color);
+  border-radius: 18px;
+}
+
+/* Inner flipping wrapper that allows 3D animation */
+.support-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+}
+
+/* Flip animation trigger on hover */
+.support-card:hover .support-card-inner {
+  transform: rotateY(180deg);
+  box-shadow: 5px 5px 1px 2px var(--secondary-color);
+}
+
+/* Front face of the support card */
+.support-card-front {
+  background-color: var(--tertiary-color);
+  color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 18px;
+}
+
+/* Back face of the support card, rotated for flipping */
+.support-card-back {
+  background-color: var(--tertiary-color);
+  color: white;
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 18px;
+}
+
+/* Title inside the support card */
+.support-card h3 {
+  color: var(--fifth-color);
+  font-size: 24px;
+}
+
+/* Description inside the support card */
+.support-card p {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-align: justify;
+  padding: 20px;
+}
+
+/* Light background color specific to the support page */
+.bg-support {
+  background-color: #fffaec;
+}
+
+/* Header text for the review section */
+.review {
+  text-align: center;
+  font-size: 24px;
+  color: var(--fourth-color);
+}
+
+/* Input box for user reviews */
+.review-input {
+  display: block;
+  padding: 40px;
+  text-align: start;
+  margin: auto;
+  width: 700px;
+  height: 100px;
+  border-radius: 19px;
+  background-color: var(--tertiary-color);
+}
+
+/* Button to submit a review */
+.review-btn {
+  background-color: var(--secondary-color);
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  color: var(--tertiary-color);
+  width: 200px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.7s;
+}
+
+/* Hover effect for the review submission button */
+.review-btn:hover {
+  background-color: var(--tertiary-color);
+  color: var(--fourth-color);
+  cursor: pointer;
+}

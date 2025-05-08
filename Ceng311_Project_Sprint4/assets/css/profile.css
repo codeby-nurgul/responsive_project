@@ -1,0 +1,293 @@
+/* This CSS file defines the some styling for the user profile page, including layouts for profile details, buttons, settings form, daily tasks, progress tracking, favorite events, and popup notifications. It ensures a consistent, and interactive user experience aligned with the overall site theme.
+ */
+.profile-header {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 40px;
+}
+.profile-buttons {
+  text-align: center;
+}
+.profile-buttons button {
+  background-color: var(--fourth-color);
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  margin-left: 20px;
+  transition: all 0.5s;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  font-size: medium;
+}
+.profile-buttons button:hover {
+  background-color: var(--primary-color);
+  color: #eee;
+}
+.profile-detail {
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  border: 4px solid var(--primary-color);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px var(--secondary-color);
+  width: 1000px;
+  background-color: #fffaec;
+}
+
+.profile-detail h3 {
+  font-size: 45px;
+  color: var(--secondary-color);
+}
+.profile-detail p {
+  font-size: 17px;
+}
+.profile-detail {
+  display: none;
+}
+.profile-detail.active {
+  display: block;
+}
+
+.profile-image {
+  width: 300px;
+  margin-left: 360px;
+}
+
+.event-description {
+  text-align: center;
+  margin-left: 30px;
+}
+button.noselect {
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: 4px solid var(--secondary-color);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 100ms;
+  position: relative;
+  margin-top: 20px;
+}
+button.noselect span,
+button.noselect svg {
+  position: absolute;
+  color: #002651;
+  fill: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+button.noselect:focus {
+  outline: none;
+  border: 2px solid #1e2a78;
+  width: 50px;
+  border-left: 4px solid #1e2a78;
+  border-bottom: 4px solid #1e2a78;
+  animation: spin 2s 500ms forwards;
+}
+button.noselect:focus span {
+  color: transparent;
+}
+button.noselect:focus svg {
+  animation: check 500ms 2300ms forwards;
+}
+@keyframes spin {
+  80% {
+    border: 4px solid transparent;
+    border-left: 4px solid #303a52;
+  }
+  100% {
+    transform: rotate(1080deg);
+    border: 4px solid #303a52;
+  }
+}
+@keyframes check {
+  to {
+    fill: #17b978;
+  }
+}
+.task-description {
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  animation: slideDown 0.3s ease-out;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+#badges-progress {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#settings {
+  display: flex;
+  justify-content: center;
+}
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--fifth-color);
+  font-size: 22px;
+}
+.settings-form label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.settings-form select {
+  padding: 6px 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.btn-settings-save {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/* Daily Tasks container */
+.my-daily-tasks {
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  left: 70px;
+  position: relative;
+}
+
+/* Each task item */
+.my-daily-tasks label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  border: 1px solid var(--secondary-color);
+  text-align: center;
+  transition: all 0.35s;
+}
+.my-daily-tasks label:hover {
+  background-color: var(--primary-color);
+  color: var(--fourth-color);
+}
+/* Task checkbox */
+.my-daily-tasks input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  accent-color: var(--primary-color);
+}
+
+.daily-tasks-heading {
+  text-align: center;
+  color: var(--fourth-color);
+}
+/* Progress bar container */
+#task-progress {
+  margin-top: 20px;
+  height: 25px;
+  background: var(--tertiary-color);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 50% !important;
+  position: relative;
+  left: 480px;
+}
+
+.popup-container-daily-task {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  animation: slideDown 0.3s ease-out;
+}
+
+.daily-tasks-header {
+  text-align: center;
+  margin-top: 23px;
+  color: var(--fourth-color);
+  font-weight: bold;
+}
+
+.task-progress {
+  width: 100%;
+  margin: auto;
+}
+#favorite-events {
+  display: flex;
+  flex-direction: column;
+}
+.favorite-event-image {
+  width: 300px;
+  margin-left: 360px;
+}
+.bg-profile {
+  background-color: #fffaec;
+}
+.task-header {
+  text-align: center;
+  font-size: 20px;
+  color: var(--fourth-color);
+}
+
+.taskcard {
+  text-align: center;
+  border: 5px solid var(--primary-color);
+  border-radius: 10px;
+  width: 400px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my-tasks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

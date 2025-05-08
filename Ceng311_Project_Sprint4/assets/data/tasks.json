@@ -1,0 +1,46 @@
+[
+    {
+      "title": "Shop Sustainably",
+      "description": "Take a photo of yourself shopping with a reusable bag."
+    },
+    {
+      "title": "Attend an Event & Give Feedback",
+      "description":
+        "Share your experience and thoughts about an event you've joined."
+    },
+    {
+      "title": "Share a Zero-Waste Recipe",
+      "description":
+        "Create and post a DIY zero-waste recipe such as homemade soap or natural cleaner."
+    },
+    {
+      "title": "Plastic Detox Week",
+      "description":
+        "Avoid single-use plastic for one week and write a brief report of your experience."
+    },
+    {
+      "title": "Watch a Nature Documentary & Summarize",
+      "description":
+        "Watch an environmental documentary and share a short summary of what you learned."
+    },
+    {
+      "title": "Start a Compost Bin",
+      "description":
+        "Set up a simple compost bin at home and document your first steps with photos."
+    },
+    {
+      "title": "Keep a Water-Saving Log",
+      "description":
+        "Track your daily water-saving habits for 3 days and share your results."
+    },
+    {
+      "title": "Use Public Transport for a Week",
+      "description":
+        "Help reduce emissions by choosing buses, metros, or trams instead of personal vehicles."
+    },
+    {
+      "title": "Assemble a Zero-Waste Kit",
+      "description":
+        "Build your own kit including reusable utensils, a thermos, and a tote bag, then share a photo."
+    }
+  ]
